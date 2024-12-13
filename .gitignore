@@ -1,0 +1,17 @@
+.vscode
+.DS_Store
+.DS_Store?
+.env
+.env.*
+._*
+.Spotlight-V100
+.Trashes
+.php-cs-fixer.cache
+*.swp
+*.save
+ehthumbs.db
+Thumbs.db
+
+node_modules/*
+bun.lockb
+package-lock.json

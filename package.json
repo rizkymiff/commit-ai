@@ -1,0 +1,19 @@
+{
+  "name": "commit-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "bin": {
+    "commit-ai": "./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "inquirer": "^12.2.0",
+    "simple-git": "^3.27.0"
+  }
+}
