@@ -22,7 +22,7 @@ module.exports = async (app) => {
 
             const fileUpdate = await git.diff(['--cached', '--name-only']);
 
-            let commitMessage = 'peler';
+            let commitMessage;
 
             const prompt = fs.readFileSync(__dirname+"/../prompts/prompt.txt");
             const updateType = require('../configs/types.json');
@@ -56,8 +56,8 @@ module.exports = async (app) => {
                 }]);
 
                 if (userChoice == 'Yes') {
-                    await git.commit(commitMessage);
-                    console.log(`Successfully commited with: \n"${commitMessage}"`);
+                    await git.commit(commitMessage.trim());
+                    console.log(`Successfully commited with: \n"${commitMessage.trim()}"`);
                     process.exit(1);
                 } else if (userChoice == 'No') {
                     console.log('Commit aborted. You can try again.');
