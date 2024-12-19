@@ -1,14 +1,21 @@
 {
-  "name": "commit-ai",
+  "name": "@rizkymiff/commit-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI untuk membuat commit message otomatis menggunakan AI",
   "main": "./src/index.js",
   "bin": {
     "commit-ai": "./src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["commit", "ai", "git", "commit message", "cli"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkymiff/commit-ai.git"
+  },
+  "author": "Achmad Miftahul Rizqi <rizky.dev28@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.7.9",
     "commander": "^12.1.0",
